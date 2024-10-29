@@ -87,7 +87,7 @@ public class Main extends javax.swing.JFrame {
             int final_grade = Integer.parseInt(model.getValueAt(i, 4).toString());
             
             // compute the final rating
-            double final_rating = (prelim_grade * 0.3) + (midterm_grade * 0.3) + (final_grade * 0.4);
+            double final_rating = (prelim_grade * 0.3) + (midterm_grade * 0.3) + (final_grade * 0.4)/3;
             
             // append final ratin
             model.setValueAt(final_rating, i, 5);
